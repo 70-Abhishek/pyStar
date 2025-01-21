@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle farthest-corner at 100% 110%, #102a43, #0260b8);
+            margin: 0;
+        }
+
+        .home {
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 10, 0.7);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 1px 1px 10px 5px #02ddff; 
+        }
+
+        .home input[type="text"],
+        .home input[type="password"],
+        .home input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .home input[type="submit"] {
+            background-color: radial-gradient(circle farthest-corner at 100% 110%, #102a43, #0260b8);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            /* transition: background-color 0.3s; */
+        }
+
+        .home input[type="submit"]:hover {
+            background: radial-gradient(circle farthest-corner at 100% 110%, #0581f6, #052039);
+            
+            
+
+        }
+
+        .mob input,
+        .passwd input {
+            height: 40px;
+        }
+
+        .sign input {
+            background: radial-gradient(circle farthest-corner at 100% 110%, #102a43, #0260b8);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .code input {
+            background: radial-gradient(circle farthest-corner at 100% 110%, #102a43, #0260b8);
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            /* background: transparent; */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .check {
+            margin-top: 10px;
+        }
+
+        .check input {
+            margin-right: 10px;
+        }
+
+        label {
+            color: white;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <div class="home">
+        <form action="index.html">
+            <div class="mob">
+                <input type="text" id="email" placeholder="Email or mobile number" aria-label="Email or mobile number">
+            </div>
+            <div class="passwd">
+                <input type="password" id="password" placeholder="Password" aria-label="Password">
+            </div>
+            <div class="sign">
+                <input type="submit" value="Sign in">
+            </div>
+            <p>OR</p>
+            <div class="code">
+                <input type="submit" value="Use a sign-in code">
+            </div>
+            <a href="#">Forgot Password?</a>
+            <div class="check">
+                <input type="checkbox" id="remember-me" aria-label="Remember me"> 
+                <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#">New to PyStar? Sign up now</a>
+        </form>
+    </div>
+
+</body>
+</html>
